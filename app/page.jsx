@@ -9,7 +9,7 @@ const Home = () => {
         <div className="text-center xl:text-left">
           <span className="text-xl">Software Engineer</span>
           <h1 className="h1 mb-6">
-            Hello I'm <br /> <span className="text-accent">Siwanthaka Savinda</span>
+            Hello I'm <br /> <span className="text-accent">Inuka Mapa</span>
           </h1>
           <p className="max-w-[500px] mb-9 text-white/80">
             I specialize in creating elegant digital experiences and have strong proficiency in a wide range of programming languages and technologies.

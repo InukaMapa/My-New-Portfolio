@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { FoDownload } from "react-icons/fi";
+import { FiDownload, FoDownload } from "react-icons/fi";
 
 const Home = () => {
   return <section className="h-full">
@@ -14,11 +14,25 @@ const Home = () => {
           <p className="max-w-[500px] mb-9 text-white/80">
             I specialize in creating elegant digital experiences and have strong proficiency in a wide range of programming languages and technologies.
           </p>
+        
+        <div className="flex flrx-col xl:flex-row items-center gap-8">
+          <Button
+            variant="outline"
+            size="lg"
+            className="uppercase flex items-center gap-2"
+            >
+            <span>Download CV</span>
+            <FiDownload className="text-xl"/>
+          </Button>
+          <div className="mb-8 xl:mb-0">
+            Social
+            </div>
         </div>
-        {/*photo*/}
-        <div>photo</div>
       </div>
+      {/*photo*/}
+      <div>photo</div>
     </div>
+  </div>
   </section>;
 };
 

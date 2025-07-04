@@ -1,5 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload, FoDownload } from "react-icons/fi";
+import Social from "@/components/Social";
+
+
+
 
 const Home = () => {
   return <section className="h-full">
@@ -25,12 +29,15 @@ const Home = () => {
             <FiDownload className="text-xl"/>
           </Button>
           <div className="mb-8 xl:mb-0">
-            Social
+            Social 
+            
             </div>
         </div>
       </div>
       {/*photo*/}
-      <div>photo</div>
+      <div>
+        photo
+      </div>
     </div>
   </div>
   </section>;

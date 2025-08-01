@@ -99,7 +99,7 @@ import {
     TooltipContent,
     TooltipProvider,
     TooltipTrigger
- } from "@radix-ui/react-tooltip";
+ } from "@/components/ui/tooltip";
 
 
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -126,9 +126,12 @@ const Resume = () => {
                  <TabsTrigger value="experience">Experience</TabsTrigger>
                   <TabsTrigger value="education">Education</TabsTrigger>
                    <TabsTrigger value="skills">Skills</TabsTrigger>
-                    <TabsTrigger value="about me">About me</TabsTrigger>
+                    <TabsTrigger value="about">About me</TabsTrigger>
             </TabsList>
-            <div>
+            <div className="min-h-[70vh] w-full">
+                <TabsContent value ="expeerience" className="w-full">
+                    experience
+                </TabsContent>
                 
             </div>
         </Tabs>

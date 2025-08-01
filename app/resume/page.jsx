@@ -12,6 +12,12 @@ import {FaHtml5,
 import { SiTailwindcss, SiNextdotjs}
 from "react-icons/fa"
 
+const experience = {
+  title: "My Experience",
+  description:
+    "Over 1 year of hands-on experience in front-end and full-stack web development, focusing on modern frameworks like React and tools like Tailwind CSS.",
+};
+
 const about ={
     title:'About me',
     description:"",
@@ -114,13 +120,12 @@ const Resume = () => {
             transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
         }}
 
-        className="min-h-[80vh] flex items-center py-12 xl:py-0"
->
+        className="min-h-[80vh] flex items-center py-12 xl:py-0">
+            
     <div className="container mx-auto">
         <Tabs
         defaultValue="experience"
-        className="flex flex-col xl:flex-row gap-[60px]"
-        >
+        className="flex flex-col xl:flex-row gap-[60px]">
             <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0
             gap-6">
                  <TabsTrigger value="experience">Experience</TabsTrigger>
@@ -129,10 +134,25 @@ const Resume = () => {
                     <TabsTrigger value="about">About me</TabsTrigger>
             </TabsList>
             <div className="min-h-[70vh] w-full">
-                <TabsContent value ="expeerience" className="w-full">
-                    experience
-                </TabsContent>
                 
+                <TabsContent value="experience" className="w-full">
+                <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                    <h3 className="text-4xl font-bold">{experience.title}</h3>
+                    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {experience.description}
+                    </p>
+                    <ScrollArea></ScrollArea>
+                </div>
+                </TabsContent>
+                <TabsContent value ="education" className="w-full">
+                     education
+                </TabsContent>
+                <TabsContent value ="skills" className="w-full">
+                     skills
+                </TabsContent>
+                <TabsContent value ="about" className="w-full">
+                     about
+                </TabsContent>
             </div>
         </Tabs>
         </div> 

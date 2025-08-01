@@ -16,6 +16,66 @@ const experience = {
   title: "My Experience",
   description:
     "Over 1 year of hands-on experience in front-end and full-stack web development, focusing on modern frameworks like React and tools like Tailwind CSS.",
+
+items: [
+  {
+    role: "Frontend Developer",
+    company: "Freelance",
+    duration: "Jan 2024 – Present",
+    details:
+      "Built responsive websites for 5+ local businesses using React.js and Tailwind CSS. Focused on clean UI, SEO optimization, and mobile-first design.",
+  },
+  {
+    role: "Intern Web Developer",
+    company: "CodeLab Technologies",
+    duration: "Aug 2023 – Dec 2023",
+    details:
+      "Assisted in developing internal admin panels and customer portals. Fixed UI bugs, improved form validations, and integrated REST APIs.",
+  },
+  {
+    role: "UI Designer",
+    company: "Personal Projects",
+    duration: "May 2023 – Jul 2023",
+    details:
+      "Designed modern interfaces using Figma and implemented them using HTML, CSS, and JavaScript for personal websites and client mockups.",
+  },
+  {
+    role: "Full Stack Developer (Capstone)",
+    company: "Online Bootcamp",
+    duration: "Mar 2023 – May 2023",
+    details:
+      "Developed a full-stack task manager app using MongoDB, Express.js, React.js, and Node.js (MERN stack). Implemented authentication and CRUD features.",
+  },
+  {
+    role: "React.js Developer",
+    company: "Open Source Contributions",
+    duration: "Feb 2023 – Apr 2023",
+    details:
+      "Contributed to open-source React projects on GitHub. Created reusable components and improved accessibility and performance.",
+  },
+  {
+    role: "Frontend Developer",
+    company: "Hackathon Team – CodeSprint",
+    duration: "Jan 2023",
+    details:
+      "Collaborated with a team of 3 to build a weather dashboard app in 24 hours. Won 2nd place among 30+ teams.",
+  },
+  {
+    role: "Junior Web Developer",
+    company: "University Projects",
+    duration: "Sep 2022 – Dec 2022",
+    details:
+      "Built a university event management system using HTML, CSS, and JavaScript. Learned version control and teamwork using Git and GitHub.",
+  },
+  {
+    role: "Student Developer",
+    company: "Codecademy",
+    duration: "2022",
+    details:
+      "Completed the Front-End Engineer track, learning JavaScript, React, Git, and asynchronous programming through 100+ interactive lessons and projects.",
+  },
+],
+
 };
 
 const about ={
@@ -141,7 +201,21 @@ const Resume = () => {
                     <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {experience.description}
                     </p>
-                    <ScrollArea></ScrollArea>
+                       <ScrollArea className="h-[400px]">
+                        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                            {experience.items.map((item,index)=> {
+                                 return (
+                                    <li key={index} className="bg-white/10 p-4 rounded-lg">
+                                     <span className="text-xs text-white/50">{item.duration}</span>
+                                        <h3 className="text-lg font-semibold text-white mt-2">{item.role}</h3>
+                                        <p className="text-sm text-white/80">{item.company}</p>
+                                        <p className="mt-2 text-white/70 text-justify">{item.details}</p>
+                                                </li>
+                                            );
+                                            })}
+                                        </ul>
+                                        </ScrollArea>
+
                 </div>
                 </TabsContent>
                 <TabsContent value ="education" className="w-full">

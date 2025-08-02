@@ -134,7 +134,7 @@ const education={
 const skills ={
     title: "My skills",
     description:"",
-skillist:[
+skillList:[
     {
         icon:<FaHtml5 />,
         name:"html 5",
@@ -206,10 +206,14 @@ const Resume = () => {
                             {experience.items.map((item,index)=> {
                                  return (
                                     <li key={index} className="bg-white/10 p-4 rounded-lg">
-                                     <span className="text-xs text-white/50">{item.duration}</span>
+                                     <span className="text-xs text-accent">{item.duration}</span>
                                         <h3 className="text-lg font-semibold text-white mt-2">{item.role}</h3>
-                                        <p className="text-sm text-white/80">{item.company}</p>
+                                        <div className="flex items-center gap-3">
+                                        <span className="w-[6px] h-[6px] rounded-full
+                                        bg-accent"></span>
+                                        <p className="text-sm text-white/80">{item.company}</p></div>
                                         <p className="mt-2 text-white/70 text-justify">{item.details}</p>
+                                        
                                                 </li>
                                             );
                                             })}
@@ -219,10 +223,47 @@ const Resume = () => {
                 </div>
                 </TabsContent>
                 <TabsContent value ="education" className="w-full">
-                     education
+                                     <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                    <h3 className="text-4xl font-bold">{education.title}</h3>
+                    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                    {education.description}
+                    </p>
+                       <ScrollArea className="h-[400px]">
+                        <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                            {education.items.map((item,index)=> {
+                                 return (
+                                    <li key={index} className="bg-white/10 p-4 rounded-lg">
+                                     <span className="text-xs text-accent">{item.duration}</span>
+                                        <h3 className="text-lg font-semibold text-white mt-2">{item.degree}</h3>
+                                        <div className="flex items-center gap-3">
+                                        <span className="w-[6px] h-[6px] rounded-full
+                                        bg-accent"></span>
+                                        <p className="text-sm text-white/80">{item.institution}</p></div>
+                                        <p className="mt-2 text-white/70 text-justify">{item.details}</p>
+                                        
+                                                </li>
+                                            );
+                                            })}
+                                        </ul>
+                                        </ScrollArea>
+
+                </div>
                 </TabsContent>
-                <TabsContent value ="skills" className="w-full">
-                     skills
+                <TabsContent value ="skills" className="w-full h-full">
+                     <div className="flex flex-col gap-[30px]">
+                      <div className="flex flex-col gap-[30px] text-cente xl:text-left">
+                        <h3 className="text-4xl font-bold">{skills.title}</h3>
+                        <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                        {skills.description}
+                        </p>
+                      </div>
+                      <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-
+                      [30px]">
+                        {skills.skillList.map((skill, index)=>{
+                          return<li key={index}>{skill.name}</li>;
+                        })}
+                      </ul>
+                     </div>
                 </TabsContent>
                 <TabsContent value ="about" className="w-full">
                      about

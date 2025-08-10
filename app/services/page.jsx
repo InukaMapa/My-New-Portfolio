@@ -7,26 +7,26 @@ const services =[
     {
         num:"01",
         title:"Web Development",
-        description:"I specialize in creating elegant digital experiences and have strong proficiency in a wide range of programming languages and technologies.",
+        description:"I build fast, responsive, and scalable websites using modern technologies. From simple landing pages to complex web applications, I ensure your site is functional, secure, and optimized for all devices. My focus is on clean code, user-friendly navigation, and smooth performance.",
         href:""
     },
     {
         num:"02",
         title:"UI/UX Design",
-        description:"I specialize in creating elegant digital experiences and have strong proficiency in a wide range of programming languages and technologies.",
+        description:"I design intuitive and visually appealing interfaces that deliver a seamless user experience. Every layout, color, and interaction is crafted with the end-user in mind — ensuring both aesthetic appeal and functional efficiency.",
         href:""
     },
     {
          num:"03",
         title:"Logo Design",
-        description:"I specialize in creating elegant digital experiences and have strong proficiency in a wide range of programming languages and technologies.",
+        description:"I  create unique, memorable logos that capture your brand’s identity and leave a lasting impression. My designs are simple yet powerful, ensuring they work across all mediums — from business cards to billboards.",
         href:""
         
     },
      {
          num:"04",
         title:"SEO",
-        description:"I specialize in creating elegant digital experiences and have strong proficiency in a wide range of programming languages and technologies.",
+        description:"I optimize websites to rank higher in search results, helping your business reach more customers organically. From keyword research to on-page optimization and technical SEO, I ensure your site is visible, fast, and search-engine friendly.",
         href:""
         
     },

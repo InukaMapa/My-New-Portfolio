@@ -6,84 +6,41 @@ import {FaHtml5,
     FaJs,
     FaReact,
     FaFigma,
-    FaNodeJs,
-    FaCSharp,
-    FaTailwind,
     FaPython,
-    FaC
-
+    FaNodeJs,
+     FaDocker,
+     FaPhp,
+     FaAndroid
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs,SiFlutter} from "react-icons/si";
 
 const experience = {
   title: "My Experience",
   description:
-    "Over 1 year of hands-on experience in front-end and full-stack web development, focusing on modern frameworks like React and tools like Tailwind CSS.",
+    "I am a Software Engineering undergraduate passionate about building real-world projects and improving my technical skills. I have practical knowledge, enjoy teamwork and collaboration, and am always eager to learn new technologies.",
   items: [
   {
-    role: "Frontend Developer",
-    company: "Freelance",
-    duration: "Jan 2024 – Present",
-    details:
-      "Built responsive websites for 5+ local businesses using React.js and Tailwind CSS. Focused on clean UI, SEO optimization, and mobile-first design.",
+    role: "Internship",
+    company: "HNB NCR Regional Office",
+    duration: "2022 Nov  – 2023 April",
+    /*details:
+      "Worked as an intern at HNB Bank, gaining hands-on experience in banking operations, customer service, and financial processes. Assisted in day-to-day tasks, learned about banking software, and developed professional skills in a corporate environment.",*/
   },
   {
-    role: "Intern Web Developer",
-    company: "CodeLab Technologies",
-    duration: "Aug 2023 – Dec 2023",
-    details:
-      "Assisted in developing internal admin panels and customer portals. Fixed UI bugs, improved form validations, and integrated REST APIs.",
-  },
-  {
-    role: "UI Designer",
-    company: "Personal Projects",
-    duration: "May 2023 – Jul 2023",
-    details:
-      "Designed modern interfaces using Figma and implemented them using HTML, CSS, and JavaScript for personal websites and client mockups.",
-  },
-  {
-    role: "Full Stack Developer (Capstone)",
-    company: "Online Bootcamp",
-    duration: "Mar 2023 – May 2023",
-    details:
-      "Developed a full-stack task manager app using MongoDB, Express.js, React.js, and Node.js (MERN stack). Implemented authentication and CRUD features.",
-  },
-  {
-    role: "React.js Developer",
-    company: "Open Source Contributions",
-    duration: "Feb 2023 – Apr 2023",
-    details:
-      "Contributed to open-source React projects on GitHub. Created reusable components and improved accessibility and performance.",
-  },
-  {
-    role: "Frontend Developer",
-    company: "Hackathon Team – CodeSprint",
-    duration: "Jan 2023",
-    details:
-      "Collaborated with a team of 3 to build a weather dashboard app in 24 hours. Won 2nd place among 30+ teams.",
-  },
-  {
-    role: "Junior Web Developer",
-    company: "University Projects",
-    duration: "Sep 2022 – Dec 2022",
-    details:
-      "Built a university event management system using HTML, CSS, and JavaScript. Learned version control and teamwork using Git and GitHub.",
-  },
-  {
-    role: "Student Developer",
-    company: "Codecademy",
-    duration: "2022",
-    details:
-      "Completed the Front-End Engineer track, learning JavaScript, React, Git, and asynchronous programming through 100+ interactive lessons and projects.",
-  },
+    role: "Undergraduate Software Engineering Student",
+    company: "CINEC Campus",
+    duration: "2023 – 2027",
+    /*details:
+      "Undergraduate Software Engineering student with practical experience in full-stack web development (HTML, CSS, JavaScript, React) and programming using Java and Python. Engaged in AI-driven projects, applying machine learning techniques to real-world applications. Skilled in problem-solving, collaborative teamwork, and designing efficient software solutions.",*/
+  }
 ],
 
 };
 
 const about ={
     title:'About me',
-    description:"",
+    description:"I am a Software Engineering undergraduate who is passionate about technology and software development. I enjoy building projects, learning new tools, and improving my coding skills. Currently, I am focusing on DevOps, cloud technologies, and backend development while preparing for my upcoming internship in the IT industry.",
     info:[
         {
           fieldName:"Name  :" ,
@@ -95,7 +52,7 @@ const about ={
         },
         {
           fieldName:"Experience : " ,
-          fieldValue: " 1 Years" 
+          fieldValue: " 3 Years" 
         },
         {
           fieldName:"Nationality  :" ,
@@ -120,7 +77,7 @@ const about ={
 const education={
     icon:"/assets/resume/cap.svg",
     title: "My education",
-    description:"",
+    description:"Currently pursuing a Bachelor’s degree in Software Engineering. I am developing skills in programming, web development, and modern technologies such as DevOps and cloud computing. I am passionate about learning new technologies and preparing myself for real-world software development and internship opportunities.",
     items: [
         {
             institution:"CINEC Campus",
@@ -147,7 +104,7 @@ const education={
 
 const skills ={
     title: "My skills",
-    description:"",
+    description:"My technical skills focus on programming, software development, and DevOps fundamentals. I am passionate about building projects, learning modern development practices, and continuously improving my technical and problem-solving skills.",
 skillList:[
     {
         icon:<FaHtml5 />,
@@ -170,28 +127,40 @@ skillList:[
         name:"figma",
     },
     {
-        icon:<FaTailwind />,
+        icon:<SiTailwindcss />,
         name:"tailwind.css",
     },
     {
-        icon:<FaNodeJs />,
-        name:"node.js",
+        icon:<SiNextdotjs />,
+        name:"next.js",
     },
     {
-        icon:<FaCSharp />,
-        name:"C#",
+        icon:<FaPhp/>,
+        name:"PHP",
     },
     {
-        icon:<FaC />,
-        name:"C++",
-    },
+        icon:<FaAndroid />,
+        name:"Android Studio",
+    }, 
     {
         icon:<FaPython />,
         name:"Python",
+    }, 
+    {
+        icon:<FaNodeJs />,
+        name:"Node.js",
     },
-    
+    {
+        icon:<FaDocker />,
+        name:"Docker",
+    },
+    {
+        icon:<SiFlutter />,
+        name:"Flutter",
+    }
+ 
     ]
-}; 
+  }; 
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 

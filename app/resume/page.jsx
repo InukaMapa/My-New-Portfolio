@@ -7,17 +7,20 @@ import {FaHtml5,
     FaReact,
     FaFigma,
     FaNodeJs,
-} from "react-icons/fa"
+    FaCSharp,
+    FaTailwind,
+    FaPython,
+    FaC
 
-import { SiTailwindcss, SiNextdotjs}
-from "react-icons/fa"
+} from "react-icons/fa";
+
+import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
 const experience = {
   title: "My Experience",
   description:
     "Over 1 year of hands-on experience in front-end and full-stack web development, focusing on modern frameworks like React and tools like Tailwind CSS.",
-
-items: [
+  items: [
   {
     role: "Frontend Developer",
     company: "Freelance",
@@ -120,15 +123,25 @@ const education={
     description:"",
     items: [
         {
-            institution:"Omline Course Platform",
-            degree: "Full Stack Web Development Bootcamp",
-            duration: "2023",
+            institution:"CINEC Campus",
+            degree: "Software Engineering",
+            duration: "2023-2027",
         },
         {
-            institution:"Codeacademy",
-            degree: "Front-end Track",
-            duration: "2023",
+            institution:"IMBS Campus",
+            degree: "ICT Foundation Course",
+            duration: "2022",
         },
+        {
+            institution:"ICBT Campus",
+            degree: "English Course",
+            duration: "2022",
+        },
+        {
+            institution:"Maliyadeva College",
+            degree: "Physical Science Stream (Maths)",
+            duration: "2021",
+        }
      ],
 };
 
@@ -156,7 +169,28 @@ skillList:[
         icon:<FaFigma />,
         name:"figma",
     },
-    ],
+    {
+        icon:<FaTailwind />,
+        name:"tailwind.css",
+    },
+    {
+        icon:<FaNodeJs />,
+        name:"node.js",
+    },
+    {
+        icon:<FaCSharp />,
+        name:"C#",
+    },
+    {
+        icon:<FaC />,
+        name:"C++",
+    },
+    {
+        icon:<FaPython />,
+        name:"Python",
+    },
+    
+    ]
 }; 
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -171,6 +205,7 @@ import {
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
+import { FaJava } from "react-icons/fa";
 
 const Resume = () => {
     return (

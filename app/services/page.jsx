@@ -7,29 +7,50 @@ const services =[
     {
         num:"01",
         title:"Web Development",
-        description:"I build fast, responsive, and scalable websites using modern technologies. From simple landing pages to complex web applications, I ensure your site is functional, secure, and optimized for all devices. My focus is on clean code, user-friendly navigation, and smooth performance.",
+        description:"I develop responsive and scalable web applications using modern technologies such as HTML, CSS, JavaScript, React, Node.js, PHP, Express.js, and REST APIs, along with tools like Git, GitHuband Tailwind CSS to build efficient and user-friendly websites.",
         href:""
     },
     {
         num:"02",
-        title:"UI/UX Design",
-        description:"I design intuitive and visually appealing interfaces that deliver a seamless user experience. Every layout, color, and interaction is crafted with the end-user in mind — ensuring both aesthetic appeal and functional efficiency.",
+        title:"Automation ",
+        description:"I create automation solutions to simplify repetitive tasks and improve workflow efficiency using  tools like Selenium, APIs to automate data processing and system operations.",
         href:""
     },
     {
          num:"03",
-        title:"Logo Design",
-        description:"I  create unique, memorable logos that capture your brand’s identity and leave a lasting impression. My designs are simple yet powerful, ensuring they work across all mediums — from business cards to billboards.",
+        title:"Database Management",
+        description:"I design and manage secure, well-structured databases using MySQL, MongoDB & Supabase applying SQL optimization, indexing, and backup strategies to ensure reliable and efficient data management.",
         href:""
         
     },
      {
          num:"04",
-        title:"SEO",
-        description:"I optimize websites to rank higher in search results, helping your business reach more customers organically. From keyword research to on-page optimization and technical SEO, I ensure your site is visible, fast, and search-engine friendly.",
+        title:"Mobile App Development",
+        description:"I build modern mobile applications using Flutter and Dart, integrating REST APIs, Supabase to create fast, scalable, and user-friendly cross-platform mobile apps.",
         href:""
         
     },
+     {
+         num:"05",
+        title:"DevOps Basics",
+        description:"I apply fundamental DevOps practices using Docker, Git, GitHub Actions and cloud platforms like Vercel and Render to automate deployment processes and maintain efficient development workflows.",
+        href:""
+        
+    },
+    {
+         num:"06",
+        title:"System Development",
+        description:"Basic knowledge in system development, including POS systems, understanding workflows, handling data, and efficient operations.",
+        href:""
+        
+    }
+    
+    
+
+    
+
+    
+
     
 ];
 

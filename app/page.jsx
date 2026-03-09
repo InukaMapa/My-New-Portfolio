@@ -24,7 +24,7 @@ const Home = () => {
           {/* btn and socials*/}
           <div className="flex flex-col sm:flex-row items-center gap-4">
             {/* download link: put your resume PDF in public/assets/resume/ and update the filename as needed */}
-            <a href="/assets/resume/resume.pdf" download>
+            <a href="/assets/resume/InukaMapa_CV.pdf" download>
               <Button 
                 variant="outline" 
                 size="lg" 

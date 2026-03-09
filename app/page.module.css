@@ -11,8 +11,8 @@
   align-items: center;
   justify-items: center;
   min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
+  padding: 70px;
+  gap: 74px;
   font-family: var(--font-geist-sans);
 }
 
@@ -58,7 +58,7 @@
 
 .ctas {
   display: flex;
-  gap: 16px;
+  gap: 10px;
 }
 
 .ctas a {
